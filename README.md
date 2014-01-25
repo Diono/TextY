@@ -1,4 +1,4 @@
-#TextY
+#TextY v0.1
 
 Manage text size in javascript
 
