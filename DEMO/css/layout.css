@@ -197,7 +197,7 @@ body {
 	position  : absolute;
 	top       : 150px;
 
-	height    : 150px;
+	height    : 180px;
 
 	font-size : 20px;
 	color     : #FFFFFF;
@@ -219,6 +219,25 @@ body {
 
 #informations .TextY {
 	font-size : 30px;
+}
+
+#informations .github {
+	position    : absolute;
+	right       : 0;
+	bottom      : 0;
+	left        : 0;
+
+	height      : 30px;
+	width       : 100%;
+
+	font-size   : 20px;
+	color       : #AAAAAA;
+	line-height : 30px;
+	text-align  : right;
+}
+
+#informations .github a {
+	color : #69A8b9;
 }
 
 #toolFont,
