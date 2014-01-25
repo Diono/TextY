@@ -31,7 +31,9 @@ window.TextY();
 
 The first argument is the DOM element and the second argument is the list of setup options
 
+```javascript
 TextY(DOM, options);
+```
 
 • __DOM__ is a _DOM element_
 
