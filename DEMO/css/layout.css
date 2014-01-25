@@ -1,0 +1,433 @@
+﻿html,
+body {
+	position         : absolute;
+	top              : 0;
+	right            : 0;
+	bottom           : 0;
+	left             : 0;
+
+	overflow         : hidden;
+	height           : 100%;
+	width            : 100%;
+	margin           : 0;
+	padding          : 0;
+
+	background-color : #052834;
+}
+
+#wrapper {
+	position         : absolute;
+	top              : 1px;
+	right            : 1px;
+	bottom           : 1px;
+	left             : 1px;
+
+	overflow         : auto;
+
+	background-color : #030B0E;
+}
+
+#content {
+	position : absolute;
+	top      : 96px;
+	right    : 96px;
+	left     : 96px;
+
+	height   : 546px;
+}
+
+#head {
+	position   : relative;
+	display    : block;
+
+	overflow   : hidden;
+	height     : 120px;
+	width      : 100%;
+	margin     : auto;
+
+	text-align : center;
+}
+
+.rightBand,
+.rightBandWhite,
+.middleBand,
+.leftBandWhite,
+.leftBand,
+#textWrapp,
+#textLimit,
+#textSize,
+#pixelSize {
+	position : absolute;
+}
+
+.middleBand {
+	top    : 0;
+	right  : 120px;
+	bottom : 0;
+	left   : 120px;
+
+	height : 120px;
+}
+
+#textWrapp,
+#textLimit {
+	top    : 0;
+	right  : 0;
+	left   : 0;
+
+	height : 60px;
+	width  : 100%;
+}
+
+#textSize,
+#textLimit {
+	display          : block;
+
+	margin           : 0;
+	padding          : 0;
+
+	background       : none;
+	background-color : #FFFFFF;
+	font-size        : 30px;
+	line-height      : 56px;
+	text-align       : center;
+	border           : none;
+	border-style     : none;
+	border-width     : 0;
+}
+
+#textSize {
+	color : #030B0E;
+}
+
+#textLimit {
+	color : #69A8b9;
+}
+
+#textSize {
+	top    : 2px;
+	right  : 2px;
+	bottom : 2px;
+	left   : 2px;
+
+	height : 56px;
+}
+
+#pixelSize {
+	right       : 0;
+	bottom      : 0;
+	left        : 0;
+
+	height      : 30px;
+	width       : 100%;
+
+	font-family : Arial,Helvetica,sans-serif;
+	font-size   : 20px;
+	color       : #FFFFFF;
+	line-height : 30px;
+	text-align  : right;
+}
+
+.rightBand,
+.rightBandWhite,
+.leftBandWhite,
+.leftBand {
+	top    : 30px;
+	height : 60px;
+}
+
+.rightBandWhite,
+.leftBandWhite {
+	width : 60px;
+}
+
+#head .rightBandWhite,
+#head .leftBandWhite,
+#textWrapp {
+	background-color : #FFFFFF;
+}
+
+#footer .rightBandWhite,
+#footer .leftBandWhite,
+#textLimit {
+	background-color : #052834;
+}
+
+.rightBandWhite {
+	right : 30px;
+}
+
+.leftBandWhite {
+	left : 30px;
+}
+
+.rightBand,
+.leftBand {
+	width             : 30px;
+	background-image  : url('../images/1.gif');
+	background-repeat : no-repeat;
+}
+
+.rightBand {
+	right : 0;
+}
+
+.leftBand {
+	left : 0;
+}
+
+#head .rightBand {
+	background-position : -30px 0;
+}
+
+#head .leftBand {
+	background-position : 0 0;
+}
+
+#footer .rightBand {
+	background-position : -30px -60px;
+}
+
+#footer .leftBand {
+	background-position : 0 -60px;
+}
+
+#tools,
+#informations {
+	position  : absolute;
+	top       : 150px;
+
+	height    : 150px;
+
+	font-size : 20px;
+	color     : #FFFFFF;
+}
+
+#tools {
+	left : 120px;
+}
+
+#informations {
+	right      : 120px;
+	text-align : justify;
+}
+
+#informations .TextY,
+#footerInformation .TextY {
+	color : #69A8b9;
+}
+
+#informations .TextY {
+	font-size : 30px;
+}
+
+#toolFont,
+#toolSize {
+	position   : absolute;
+	right      : 0;
+	left       : 0;
+
+	height     : 30px;
+	width      : 100%;
+	margin     : auto;
+
+	text-align : center;
+}
+
+#toolFont {
+	top : 30px;
+}
+
+#toolSize {
+	top : 90px;
+}
+
+#toolFont .text,
+#toolSize .text,
+#fontPicker,
+#sizePicker {
+	display     : inline-block;
+	height      : 30px;
+	line-height : 30px;
+}
+
+#toolFont .text,
+#toolSize .text {
+	width      : 45%;
+	margin     : 0 5% 0 auto;
+	text-align : right;
+}
+
+#fontPicker,
+#sizePicker {
+	width  : 45%;
+	margin : 0 auto 0 auto;
+}
+
+#footer,
+#footerInformation {
+	position   : absolute;
+	text-align : center;
+}
+
+#footerInformation {
+	right       : 0;
+	bottom      : 120px;
+	left        : 0;
+
+	height      : 30px;
+	width       : 100%;
+
+	font-size   : 16px;
+	color       : #FFFFFF;
+	line-height : 30px;
+}
+
+#footerInformation .TextY {
+	font-size : 20px;
+}
+
+#footer {
+	bottom : 0;
+	left   : auto;
+
+	height : 90px;
+	width  : 600px;
+	margin : 0 auto;
+}
+
+#footer .middleBand {
+	width : 360px;
+}
+
+.cursive {
+	font-family : 'cursive';
+}
+
+.monospace {
+	font-family : 'monospace';
+}
+
+.serif {
+	font-family : 'serif';
+}
+
+.sans-serif {
+	font-family : 'sans-serif';
+}
+
+.fantasy {
+	font-family : 'fantasy';
+}
+
+.default {
+	font-family : 'default';
+}
+
+.Arial {
+	font-family : 'Arial';
+}
+
+.Arial-Black {
+	font-family : 'Arial Black';
+}
+
+.Arial-Narrow {
+	font-family : 'Arial Narrow';
+}
+
+.Arial-Rounded-MT-Bold {
+	font-family : 'Arial Rounded MT Bold';
+}
+
+.Bookman-Old-Style {
+	font-family : 'Bookman Old Style';
+}
+
+.Bradley-Hand-ITC {
+	font-family : 'Bradley Hand ITC';
+}
+
+.Century {
+	font-family : 'Century';
+}
+
+.Century-Gothic {
+	font-family : 'Century Gothic';
+}
+
+.Comic-Sans-MS {
+	font-family : 'Comic Sans MS';
+}
+
+.Courier {
+	font-family : 'Courier';
+}
+
+.Courier-New {
+	font-family : 'Courier New';
+}
+
+.Georgia {
+	font-family : 'Georgia';
+}
+
+.Gentium {
+	font-family : 'Gentium';
+}
+
+.Impact {
+	font-family : 'Impact';
+}
+
+.King {
+	font-family : 'King';
+}
+
+.Lucida-Console {
+	font-family : 'Lucida Console';
+}
+
+.Lalit {
+	font-family : 'Lalit';
+}
+
+.Modena {
+	font-family : 'Modena';
+}
+
+.Monotype-Corsiva {
+	font-family : 'Monotype Corsiva';
+}
+
+.Papyrus {
+	font-family : 'Papyrus';
+}
+
+.Tahoma {
+	font-family : 'Tahoma';
+}
+
+.TeX {
+	font-family : 'TeX';
+}
+
+.Times {
+	font-family : 'Times';
+}
+
+.Times-New-Roman {
+	font-family : 'Times New Roman';
+}
+
+.Trebuchet-MS {
+	font-family : 'Trebuchet MS';
+}
+
+.Verdana {
+	font-family : 'Verdana';
+}
+
+.Verona {
+	font-family : 'Verona';
+}

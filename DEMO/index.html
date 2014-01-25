@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            ** TextY ** v0.1
+        </title>
+        <link type="text/css" rel="Stylesheet" href="css/layout.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div id="head">
+                    <div class="rightBand"></div>
+                    <div class="rightBandWhite"></div>
+                    <div class="middleBand">
+                        <div id="textWrapp">
+                            <input type="text" id="textSize" value="tapez votre texte ici ..." class="Arial" />
+                        </div>
+                        <div id="pixelSize"></div>
+                    </div>
+                    <div class="leftBandWhite"></div>
+                    <div class="leftBand"></div>
+                </div>
+                <div id="tools" class="Verdana">
+                    <div id="toolFont">
+                        <div class="text">
+                            Police :
+                        </div><select id="fontPicker" value="empty">
+                            <option value="cursive" class="cursive">
+                                cursive
+                            </option>
+                            <option value="monospace" class="monospace">
+                                monospace
+                            </option>
+                            <option value="serif" class="serif">
+                                serif
+                            </option>
+                            <option value="sans-serif" class="sans-serif">
+                                sans-serif
+                            </option>
+                            <option value="fantasy" class="fantasy">
+                                fantasy
+                            </option>
+                            <option value="default" class="default">
+                                default
+                            </option>
+                            <option value="Arial" class="Arial" selected="selected">
+                                Arial
+                            </option>
+                            <option value="Arial-Black" class="Arial-Black">
+                                Arial Black
+                            </option>
+                            <option value="Arial-Narrow" class="Arial-Narrow">
+                                Arial Narrow
+                            </option>
+                            <option value="Arial-Rounded-MT-Bold" class="Arial-Rounded-MT-Bold">
+                                Arial Rounded MT Bold
+                            </option>
+                            <option value="Bookman-Old-Style" class="Bookman-Old-Style">
+                                Bookman Old Style
+                            </option>
+                            <option value="Bradley-Hand-ITC" class="Bradley-Hand-ITC">
+                                Bradley Hand ITC
+                            </option>
+                            <option value="Century" class="Century">
+                                Century
+                            </option>
+                            <option value="Century-Gothic" class="Century-Gothic">
+                                Century Gothic
+                            </option>
+                            <option value="Comic-Sans-MS" class="Comic-Sans-MS">
+                                Comic Sans MS
+                            </option>
+                            <option value="Courier" class="Courier">
+                                Courier
+                            </option>
+                            <option value="Courier-New" class="Courier-New">
+                                Courier New
+                            </option>
+                            <option value="Georgia" class="Georgia">
+                                Georgia
+                            </option>
+                            <option value="Gentium" class="Gentium">
+                                Gentium
+                            </option>
+                            <option value="Impact" class="Impact">
+                                Impact
+                            </option>
+                            <option value="King" class="King">
+                                King
+                            </option>
+                            <option value="Lucida-Console" class="Lucida-Console">
+                                Lucida Console
+                            </option>
+                            <option value="Lalit" class="Lalit">
+                                Lalit
+                            </option>
+                            <option value="Modena" class="Modena">
+                                Modena
+                            </option>
+                            <option value="Monotype-Corsiva" class="Monotype-Corsiva">
+                                Monotype Corsiva
+                            </option>
+                            <option value="Papyrus" class="Papyrus">
+                                Papyrus
+                            </option>
+                            <option value="Tahoma" class="Tahoma">
+                                Tahoma
+                            </option>
+                            <option value="TeX" class="TeX">
+                                TeX
+                            </option>
+                            <option value="Times" class="Times">
+                                Times
+                            </option>
+                            <option value="Times-New-Roman" class="Times-New-Roman">
+                                Times New Roman
+                            </option>
+                            <option value="Trebuchet-MS" class="Trebuchet-MS">
+                                Trebuchet MS
+                            </option>
+                            <option value="Verdana" class="Verdana">
+                                Verdana
+                            </option>
+                            <option value="Verona" class="Verona">
+                                Verona
+                            </option>
+                        </select>
+                    </div>
+                    <div id="toolSize">
+                        <div class="text">
+                            Taille :
+                        </div><input type="number" id="sizePicker" min="7" max="60" value="30" />
+                    </div>
+                </div>
+                <div id="informations">
+                    <span class="TextY Courier">TextY</span> <span class="Verdana">est un outil pour mesurer la longueur d'un texte en pixel. TextY s'appuie sur une base de donn&eacute;s regroupant les tailles de chaque caract&egrave;re d'une police.</span>
+                </div>
+                <div id="footerInformation">
+                    <span class="TextY Courier">TextY</span> <span class="Verdana">peux adapter la taille d'un texte pour l'afficher en entier. Ci-dessous la largeur est fix&eacute;e &agrave; 300 pixels: </span>
+                </div>
+                <div id="footer">
+                    <div class="rightBand"></div>
+                    <div class="rightBandWhite"></div>
+                    <div class="middleBand">
+                        <div id="textLimit" class="Arial"></div>
+                    </div>
+                    <div class="leftBandWhite"></div>
+                    <div class="leftBand"></div>
+                </div>
+            </div>
+        </div><script type="text/javascript" src="js/TextY.js">
+</script><script type="text/javascript" src="js/js.js">
+</script>
+    </body>
+</html>
