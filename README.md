@@ -12,16 +12,16 @@ Manage text size in javascript
 
 ##Introduction
 
-Texty is a tool to measure the length of a text pixel. Texty relies on a database gathering the size of each character in a font.
+TextY is a tool to measure the length of a text pixel. TextY relies on a database gathering the size of each character in a font.
 
 ##How to use
 
-Texty is attached to window. we call directly or through window:
+TextY is attached to window. we call directly or through window:
 
 ```javascript
 TextY();
 ```
-or 
+or
 
 ```javascript
 window.TextY();
@@ -52,9 +52,9 @@ TextY($('#my_element')[0]); // access to the DOM element
 
 ```javascript
 var options = {
-    limit: true, //[Boolean/Number] enforce a size limit for text and adjust its size and its contents so that it does not exceed
-    clear: true, //[Boolean] deletes the reference text container to the update before calculating its size
-    min: 7 //[Number] defines the threshold beyond which the text can not be reduced
+    limit: true, // [Boolean/Number] enforce a size limit for text and adjust its size and its contents so that it does not exceed
+    clear: true, // [Boolean]        deletes the reference text container to the update before calculating its size
+    min: 7 //       [Number]         defines the threshold beyond which the text can not be reduced
 }
 ```
 
