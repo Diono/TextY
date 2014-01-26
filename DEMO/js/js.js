@@ -1,4 +1,6 @@
 ﻿;
+// use strict mode to improve performance of javascript
+"use strict";
 (function(win, undefined) {
 	/**
 	 * ==================================================

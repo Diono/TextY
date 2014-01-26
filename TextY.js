@@ -8,6 +8,8 @@
  */
 
 ;
+// use strict mode to improve performance of javascript
+"use strict";
 (function(win, undefined) {
 
 	// ==================================================
@@ -136,18 +138,18 @@
 				// try to convert css name to find value example : font-family <> fontFamily
 				else if (!loop) {
 
-					var split_css = [];
+					var splitCss = [];
 
 					if (/\-/.test(css)) {
-						split_css = css.split('-');
+						splitCss = css.split('-');
 
-						if (split_css.length > 1) value = this.getCssProperty(DOM, split_css[0] + split_css[1].charAt(0)
-							.toUpperCase() + split_css[1].slice(1), true);
+						if (splitCss.length > 1) value = this.getCssProperty(DOM, splitCss[0] + splitCss[1].charAt(0)
+							.toUpperCase() + splitCss[1].slice(1), true);
 
 					} else if (/[A-Z]/.test(css)) {
-						split_css = css.match(/([a-z]*)([A-Z])([a-z]*)/);
+						splitCss = css.match(/([a-z]*)([A-Z])([a-z]*)/);
 
-						if (split_css.length > 3) value = this.getCssProperty(DOM, split_css[1] + '-' + split_css[2].toLowerCase() + split_css[3], true);
+						if (splitCss.length > 3) value = this.getCssProperty(DOM, splitCss[1] + '-' + splitCss[2].toLowerCase() + splitCss[3], true);
 
 					}
 
@@ -175,19 +177,19 @@
 				if (word) {
 
 					// gets number of letters in the word
-					var word_length = word.length;
+					var wordLength = word.length;
 
 					// if the font is registered
 					if (this.fonts[fontName]) {
 
 						// gets numbers of different letter's size
-						var different_length = this.fonts[fontName].length;
+						var differentLength = this.fonts[fontName].length;
 
 						// for each letter in the word
-						for (var i = 0; i < word_length; i++) {
+						for (var i = 0; i < wordLength; i++) {
 
 							var letter = word.charAt(i), // gets the letter
-								median_size = this.fonts[fontName][0]; // get's the median size of the font (average of all sizes)
+								medianSize = this.fonts[fontName][0]; // get's the median size of the font (average of all sizes)
 
 							// if the letter is an hexa code
 							if (letter.match(/%/gi)) {
@@ -200,25 +202,25 @@
 							}
 
 							// looking for the letter's size
-							for (var j = 1; j < different_length; j++) {
+							for (var j = 1; j < differentLength; j++) {
 
 								// if found the letter
 								if (this.fonts[fontName][j] && this.fonts[fontName][j].test(letter)) {
 
 									// replace median size by the letter size
-									median_size = j;
+									medianSize = j;
 
 									// break the loop
-									j = different_length;
+									j = differentLength;
 								}
 							}
 
 							// compute the word size by letters
-							size += median_size;
+							size += medianSize;
 						}
 
 						// if the font is NOT registered
-					} else size = word_length * 7;
+					} else size = wordLength * 7;
 
 				}
 
@@ -294,7 +296,7 @@
 
 						if (size > limit) {
 							if (!DOM.TextYSize) DOM.TextYSize = fontSize;
-						fontSize = min || this.minSize;
+							fontSize = min || this.minSize;
 
 							size = textIndent + Math.ceil(((this.wordSize(text, fontFamily) * fontSize) / 16));
 
