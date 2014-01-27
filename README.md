@@ -1,14 +1,10 @@
-#TextY v0.1
+#TextY v0.1.13
 
 Manage text size in javascript
 
-@author Diono CORBEL
+@author Diono CORBEL http://www.diono.fr/
 
-• http://www.diono.fr/
-
-• http://www.dionofolio.com/
-
-• http://www.dionoportfolio.com/
+DEMO : http://www.dionoportfolio.com/TextY/
 
 ##Introduction
 
