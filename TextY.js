@@ -1,10 +1,8 @@
 /**
- * TextY v0.1
+ * TextY v0.1.14
  *
- * @author Diono CORBEL
- * http://www.diono.fr/
- * http://www.dionofolio.com/
- * http://www.dionoportfolio.com/
+ * @author Diono CORBEL  http://www.diono.fr/
+ * DEMO : http://www.dionoportfolio.com/TextY/
  */
 
 ;
